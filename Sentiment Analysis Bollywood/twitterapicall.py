@@ -6,10 +6,10 @@ class twitterapi(object):
     def __init__(self):
         self.api()
     def api(self):
-        consumer_key = 'sc3CsquYxIb4qivoKFaDMkU9s'
-        consumer_secret = '32dGZUZnSvcQqZ3dEwUrkn0at5l3DDGZr3ye4fpGVBDIXnKkW6'
-        access_token = '970159915464642560-P2P9v1cJoQ9N0brlDca3qPVqDjdJIc6'
-        access_token_secret = 'tJNGEhOLr9Bo9U1ba7q7XLF1y56L4m0LkQLizdmKBVNu1'
+        consumer_key = 'your_API'
+        consumer_secret = 'Your_secret_key'
+        access_token = 'your_access_token'
+        access_token_secret = 'your_secret_token'
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
         auth.set_access_token(access_token, access_token_secret)
         api = tweepy.API(auth,wait_on_rate_limit=True)
